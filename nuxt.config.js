@@ -15,8 +15,11 @@ export default {
     ]
   },
 
+  ssr: false,
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/styles/app.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -40,5 +43,5 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
 }

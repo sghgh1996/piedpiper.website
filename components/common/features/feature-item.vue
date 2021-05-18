@@ -1,0 +1,153 @@
+<template>
+  <nuxt-link :to="link" class="features-small-item">
+    <div class="icon">
+      <i class="fa fa-cloud"></i>
+    </div>
+    <h5 class="features-title">{{ title }}</h5>
+    <p>{{ description }}</p>
+    <div class="next">
+      <i class="fa fa-angle-right"></i>
+    </div>
+  </nuxt-link>
+</template>
+
+<script>
+export default {
+  props: {
+    link: {
+      type: String,
+      required: true,
+    },
+    title: {
+      type: String,
+      required: true,
+    },
+    description: {
+      type: String,
+      required: true,
+    },
+  }  
+}
+</script>
+
+<style lang="scss" scoped>
+
+  .features-small-item {
+    display: block;
+    background: #FFFFFF;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    margin-bottom: 45px;
+    border-radius: 5px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      background-image: linear-gradient(135deg, #0C869A 0%, #23B8CF 100%);
+      transition: all 0.3s ease 0s;
+      opacity: 0;
+      border-radius: 5px;
+    }
+
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+
+      .features-title {
+        color: #ffffff;
+      }
+
+      p {
+        color: #FFF7F5;
+      }
+
+      a {
+        span, i {
+          color: #fff;
+        }
+      }
+    }
+
+    &.active {
+      &:before {
+        opacity: 1;
+      }
+
+      .features-title {
+        color: #fff;
+      }
+
+      p {
+        color: #FFF7F5;
+      }
+
+      a {
+        span, i {
+          color: #fff;
+        }
+      }
+    }
+
+    .icon {
+      width: 67px;
+      height: 67px;
+      line-height: 70px;
+      margin: auto;
+      position: relative;
+      margin-bottom: 20px;
+      background: #E2FBFF;
+      border-radius: 5px;
+
+      i {
+        font-size: 18px;
+        color: #169CB1;
+      }
+    }
+    
+    .features-title {
+      font-weight: 400;
+      font-size: 16px;
+      color: #3B566E;
+      letter-spacing: 0.7px;
+      margin-bottom: 15px;
+      position: relative;
+      z-index: 2;
+      transition: all 0.3s ease 0s;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      color: #6F8BA4;
+      letter-spacing: 0.88px;
+      line-height: 26px;
+      position: relative;
+      z-index: 2;
+      transition: all 0.3s ease 0s;
+      margin-bottom: 20px;
+    }
+
+    .next {
+      width: 58px;
+      height: 58px;
+      background-image: linear-gradient(135deg, #0C869A 0%, #23B8CF 100%);
+      line-height: 58px;
+      border-radius: 100px;
+      font-size: 28px;
+      color: #fff;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      margin: auto;
+    }
+  }
+</style>
