@@ -16,17 +16,17 @@ export default {
   props: {
     link: {
       type: String,
-      required: true,
+      required: true
     },
     title: {
       type: String,
-      required: true,
+      required: true
     },
     description: {
       type: String,
-      required: true,
-    },
-  }  
+      required: true
+    }
+  }
 }
 </script>
 
@@ -112,7 +112,7 @@ export default {
         color: #169CB1;
       }
     }
-    
+
     .features-title {
       font-weight: 400;
       font-size: 16px;
