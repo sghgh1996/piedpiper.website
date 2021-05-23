@@ -4,8 +4,8 @@
       <i class="fa fa-cloud"></i>
     </div>
     <h5 class="features-title">{{ title }}</h5>
-    <p>{{ description }}</p>
-    <div class="next">
+    <p v-if="!small">{{ description }}</p>
+    <div v-if="!small" class="next">
       <i class="fa fa-angle-right"></i>
     </div>
   </nuxt-link>
@@ -24,7 +24,11 @@ export default {
     },
     description: {
       type: String,
-      required: true,
+      default: '',
+    },
+    small: {
+      type: Boolean,
+      default: false,
     },
   }  
 }

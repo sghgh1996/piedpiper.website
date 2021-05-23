@@ -8,7 +8,6 @@
 			<img src="~/assets/images/hero-bg.svg" class="img-fluid" alt="">
 		</div>
 
-		<!-- ***** Header Text Start ***** -->
 		<div class="header-text">
 			<div class="container">
 				<div class="row">
@@ -20,7 +19,6 @@
 				</div>
 			</div>
 		</div>
-		<!-- ***** Header Text End ***** -->
 	</div>
 </template>
 

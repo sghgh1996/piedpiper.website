@@ -1,5 +1,5 @@
 <template>
-  <section class="section features-home">
+  <section class="section areas-home">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -59,3 +59,24 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  .areas-home {
+    padding-top: 0px;
+    margin-top: -100px;
+  }
+
+  @media (max-width: 1200px) {
+    .areas-home {
+      padding-top: 0px;
+      margin-top: -10px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .areas-home {
+      padding-top: 100px;
+      margin-top: 0px;
+    }
+  }
+</style>

@@ -4,13 +4,10 @@
 			<div class="row">
 				<div class="col-12">
 					<nav class="main-nav">
-						<!-- ***** Logo Start ***** -->
 						<nuxt-link to="/" class="logo">
 							<img src="~/assets/images/piedpiper-logo.png" alt="piedpiper"/>
 						</nuxt-link>
-						<!-- ***** Logo End ***** -->
 
-						<!-- ***** Menu Start ***** -->
 						<ul class="nav">
 							<li><a href="green-index.html#welcome">Home</a></li>
 							<li class="submenu">
@@ -36,7 +33,6 @@
 						<a class="menu-trigger">
 							<span>Menu</span>
 						</a>
-						<!-- ***** Menu End ***** -->
 					</nav>
 				</div>
 			</div>
