@@ -15,9 +15,13 @@ exports.find = async function (req, res) {
   }
   try {
     let result = await Career.findOne({ _id: req.params.id }).select('-__v');
-    res.json(result);
+    if(result) {
+      res.json(result);
+    }else{
+      res.status(404).json(notFound);
+    }
   }catch (e) {
-    res.status(404).json(notFound);
+    res.status(400).json(invalidRequest);
   }
 }
 
