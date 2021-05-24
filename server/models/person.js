@@ -13,10 +13,4 @@ const PersonSchema = new Schema({
   }
 });
 
-// get all persons
-PersonSchema.methods.getAllPersons = async function() {
-  let result = await this.model(modelName).find({});
-  return result;
-}
-
 module.exports = mongoose.model(modelName, PersonSchema);

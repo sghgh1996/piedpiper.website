@@ -1,17 +1,12 @@
 const router = require('express').Router()
 
-let Person = require('./models/person')
+const personController = require('./controller/personController')
+const careerController = require('./controller/careerController')
 
-router.get('/', (req, res) => {
+router.get('/', personController.findAll)
 
-  // let x = persons.getAllPersons();
-  let p = new Person()
-  p.getAllPersons().then((persons) =>{
-    console.log(persons)
-    res.send('Hello World! 2' + persons);
-  })
-
-
-})
+router.post('/career/add', careerController.add)
+router.get('/career/list', careerController.findAll)
+router.get('/career/:id', careerController.find)
 
 module.exports = router

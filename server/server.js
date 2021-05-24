@@ -17,6 +17,9 @@ process.on('SIGINT', function() {
 
 mongoose.connect(process.env.DATABASE_URI, {useNewUrlParser: true, useUnifiedTopology: true});
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extendend: false }));
+
 app.use(routes)
 
 app.listen(port, (err) => {
