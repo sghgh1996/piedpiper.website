@@ -2,8 +2,11 @@ const express = require('express')
 const mongoose = require("mongoose")
 const dotenv = require("dotenv")
 const bodyParser = require("body-parser");
+const multer = require('multer');
 
 dotenv.config()
+
+let upload = multer({dest: 'images/'});
 
 const app = express()
 const port = 7474
@@ -17,8 +20,15 @@ process.on('SIGINT', function() {
 
 mongoose.connect(process.env.DATABASE_URI, {useNewUrlParser: true, useUnifiedTopology: true});
 
+// for parsing application/json
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extendend: false }));
+
+// for parsing application/xwww-
+app.use(bodyParser.urlencoded({ extendend: true }));
+
+// form-urlencoded
+// for parsing multipart/form-data
+app.use(upload.array());
 
 app.use(routes)
 

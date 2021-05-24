@@ -9,7 +9,7 @@ const PersonSchema = new Schema({
   role: { type: Schema.Types.ObjectId, ref: "Career" },
   contact: {
     phone: String,
-    Email: String
+    email: String
   }
 });
 
