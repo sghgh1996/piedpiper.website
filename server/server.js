@@ -4,9 +4,19 @@ const dotenv = require("dotenv")
 const bodyParser = require("body-parser");
 const multer = require('multer');
 
+// read .env file
 dotenv.config()
 
-let upload = multer({dest: 'images/'});
+// storage config for files
+let storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, process.env.IMAGES);
+  },
+  filename: function (req, file, cb) {
+    cb(null, `${Date.now()}_${file.originalname}`);
+  }
+});
+let upload = multer({storage: storage});
 
 const app = express()
 const port = 7474
@@ -28,7 +38,7 @@ app.use(bodyParser.urlencoded({ extendend: true }));
 
 // form-urlencoded
 // for parsing multipart/form-data
-app.use(upload.array());
+app.use(upload.any());
 
 app.use(routes)
 
