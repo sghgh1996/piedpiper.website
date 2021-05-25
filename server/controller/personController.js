@@ -6,7 +6,7 @@ const notFound = {msg: 'Not Found'};
 const Validator = require('validatorjs');
 
 exports.findAll = async function (req, res) {
-  let result = await Person.find({}).populate();
+  let result = await Person.find({}).populate('role').select('-__v');
   res.json(result);
 }
 
@@ -48,4 +48,40 @@ exports.add = async function (req, res) {
   result = await Person.findById(person._id).populate('role').select('-__v')
   res.json(result)
 
+}
+
+exports.findByRole = async function (req, res) {
+  if(!req.params.id) {
+    res.status(400).json(invalidRequest);
+    return;
+  }
+  try {
+
+    let result = await Person.find({role: req.params.id}).populate('role').select('-__v');
+    console.log(result)
+    if(result) {
+      res.json(result);
+    }else{
+      res.status(404).json(notFound);
+    }
+  }catch (e) {
+    res.status(400).json(invalidRequest);
+  }
+}
+
+exports.findById = async function (req, res) {
+  if(!req.params.id) {
+    res.status(400).json(invalidRequest);
+    return;
+  }
+  try {
+    let result = await Person.findById(req.params.id).populate('role').select('-__v');
+    if(result) {
+      res.json(result);
+    }else{
+      res.status(404).json(notFound);
+    }
+  }catch (e) {
+    res.status(400).json(invalidRequest);
+  }
 }
