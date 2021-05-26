@@ -47,6 +47,6 @@ app.listen(process.env.HYPER_PORT, process.env.HYPER_HOST ,(err) => {
   if (err) {
     console.log(err)
   } else {
-    console.log(`Example app listening at http://localhost:${port}`)
+    console.log(`Example app listening at http://${process.env.HYPER_HOST}:${process.env.HYPER_PORT}`)
   }
 })
