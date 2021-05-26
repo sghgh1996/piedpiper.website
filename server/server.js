@@ -40,6 +40,7 @@ app.use(bodyParser.urlencoded({ extendend: true }));
 // for parsing multipart/form-data
 app.use(upload.any());
 
+app.use(express.static('images'))
 app.use(routes)
 
 app.listen(port, (err) => {

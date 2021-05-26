@@ -15,7 +15,6 @@ exports.add = async function (req, res) {
   let validator = new Validator(req.body,{
     name: 'required',
     description: 'required',
-    role: 'required',
     contact: {
       phone: 'required',
       email: 'required|email'
