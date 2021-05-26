@@ -19,7 +19,7 @@ let storage = multer.diskStorage({
 let upload = multer({storage: storage});
 
 const app = express()
-const port = 7474
+
 let routes = require('./routes.js')
 
 // kill it by ctrl + C
@@ -43,7 +43,7 @@ app.use(upload.any());
 app.use(express.static('images'))
 app.use(routes)
 
-app.listen(port, (err) => {
+app.listen(process.env.HYPER_PORT, process.env.HYPER_HOST ,(err) => {
   if (err) {
     console.log(err)
   } else {
