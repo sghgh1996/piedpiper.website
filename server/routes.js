@@ -6,7 +6,7 @@ const productController = require('./controller/productController')
 const careerController = require('./controller/careerController')
 
 router.get('/', (req, res) => {
-  req.send('Up and running')
+  res.send('Up and running')
 })
 
 router.post('/people/add', personController.add)

@@ -3,6 +3,9 @@ const mongoose = require("mongoose")
 const dotenv = require("dotenv")
 const bodyParser = require("body-parser");
 const multer = require('multer');
+const morgan = require('morgan')
+
+// morgan http logger
 
 // read .env file
 dotenv.config()
@@ -29,6 +32,9 @@ process.on('SIGINT', function() {
 });
 
 mongoose.connect(process.env.DATABASE_URI, {useNewUrlParser: true, useUnifiedTopology: true});
+
+// http logger morgan
+app.use(morgan('tiny'))
 
 // for parsing application/json
 app.use(bodyParser.json());
