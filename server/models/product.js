@@ -7,6 +7,7 @@ const ProductSchema = new Schema({
   information: String,
   title: String,
   area: { type: Schema.Types.ObjectId, ref: "Area" },
+  people: [{ type: Schema.Types.ObjectId, ref: "Person" }],
 });
 
 module.exports = mongoose.model(modelName, ProductSchema);

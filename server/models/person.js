@@ -6,11 +6,13 @@ const PersonSchema = new Schema({
   name: String,
   photo: String,
   description: String,
-  area: { type: Schema.Types.ObjectId, ref: "Area" },
   contact: {
     phone: String,
     email: String
-  }
+  },
+  role: { type: Schema.Types.ObjectId, ref: "Career" },
+  area: { type: Schema.Types.ObjectId, ref: "Area" },
+  products: [{ type: Schema.Types.ObjectId, ref: "Product" }]
 });
 
 module.exports = mongoose.model(modelName, PersonSchema);
