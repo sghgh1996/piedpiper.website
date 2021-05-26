@@ -5,7 +5,9 @@ const areaController = require('./controller/areaController')
 const productController = require('./controller/productController')
 const careerController = require('./controller/careerController')
 
-router.get('/', personController.findAll)
+router.get('/', (req, res) => {
+  req.send('Up and running')
+})
 
 router.post('/people/add', personController.add)
 router.get('/people/list', personController.findAll)
