@@ -3,7 +3,9 @@ const mongoose = require("mongoose")
 const dotenv = require("dotenv")
 const bodyParser = require("body-parser");
 const multer = require('multer');
-const morgan = require('morgan')
+const morgan = require('morgan');
+const cors = require('cors');
+
 
 // morgan http logger
 
@@ -32,6 +34,9 @@ process.on('SIGINT', function() {
 });
 
 mongoose.connect(process.env.DATABASE_URI, {useNewUrlParser: true, useUnifiedTopology: true});
+
+// enable all cors
+app.use(cors())
 
 // http logger morgan
 app.use(morgan('tiny'))
