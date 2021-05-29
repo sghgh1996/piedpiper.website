@@ -1,14 +1,12 @@
 <template>
   <div class="page-banner">
-    <img src="http://demo.tempload.com/alya/assets/images/photos/parallax-counter.jpg" alt="This is title" />
+    <img :src="imgSrc" alt="This is title" />
     <div class="cover"/>
     <div class="card-title">
       <div>
-        <h1>
-          This is the title
-        </h1>
+        <h1>{{ title }}</h1>
         <span>
-          <page-breadcrumbs :items="herger" />
+          <page-breadcrumbs :items="breadcrumbs" />
         </span>
       </div>
     </div>
@@ -22,15 +20,18 @@ export default {
   components: {
     PageBreadcrumbs
   },
-  data () {
-    return {
-      herger: [{
-        name: 'salam',
-        link: 'https://www.google.com/'
-      }, {
-        name: 'chetori',
-        link: 'https://www.facebook.com/'
-      }]
+  props: {
+    title: {
+      type: String,
+      required: true
+    },
+    imgSrc: {
+      type: String,
+      required: true
+    },
+    breadcrumbs: {
+      type: Array,
+      required: true
     }
   }
 }
