@@ -59,8 +59,9 @@ export default {
       display: inline-block;
 
       &:after {
-        font-family: FontAwesome;
+        font-family: 'Font Awesome\ 5 Free',serif;
         content: "\f105";
+        font-weight: 900;
         margin-left: 10px;
         color: #6F8BA4;
       }
