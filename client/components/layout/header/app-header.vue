@@ -9,26 +9,26 @@
 						</nuxt-link>
 
 						<ul class="nav">
-							<li><a href="green-index.html#welcome">Home</a></li>
+							<li><a href="/">Home</a></li>
 							<li class="submenu">
 								<a href="javascript:;">Discover</a>
 								<ul>
-									<li><a href="green-index.html#features">Features</a></li>
-									<li><a href="green-index.html#our-team">Our Team</a></li>
-									<li><a href="green-index.html#pricing-plans">Pricing Plans</a></li>
-									<li><a href="green-index.html#blog">Latests Blogs</a></li>
+									<li><a href="/">Features</a></li>
+									<li><a href="/">Our Team</a></li>
+									<li><a href="/">Pricing Plans</a></li>
+									<li><a href="/">Latests Blogs</a></li>
 								</ul>
 							</li>
 							<li class="submenu">
 								<a href="javascript:;">Pages</a>
 								<ul>
-									<li><a href="green-about.html">About Us</a></li>
-									<li><a href="green-features.html">Features</a></li>
-									<li><a href="green-faq.html">FAQ's</a></li>
-									<li><a href="green-blog.html">Blog</a></li>
+									<li><a href="/">About Us</a></li>
+									<li><a href="/">Features</a></li>
+									<li><a href="/">FAQ's</a></li>
+									<li><a href="/">Blog</a></li>
 								</ul>
 							</li>
-							<li><a href="green-contact.html">Contact</a></li>
+							<li><a href="/">Contact</a></li>
 						</ul>
 						<a class="menu-trigger">
 							<span>Menu</span>

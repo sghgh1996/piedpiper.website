@@ -1,7 +1,9 @@
 <template>
   <nuxt-link :to="link" class="features-small-item">
     <div class="icon">
-      <i class="fa fa-cloud"></i>
+      <slot name="image">
+        <i class="fa fa-cloud"></i>
+      </slot>
     </div>
     <h5 class="features-title">{{ title }}</h5>
     <p v-if="!small">{{ description }}</p>

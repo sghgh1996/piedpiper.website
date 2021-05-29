@@ -16,7 +16,11 @@
                 title="All Careers"
                 link="/careers"
                 :small="true"
-              />
+              >
+                <template #image>
+                  <i class="fa fa-plus"></i>
+                </template>
+              </feature-item>
             </div>
 					</div>
 				</div>
