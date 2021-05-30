@@ -7,7 +7,7 @@
     </div>
     <h5 class="features-title">{{ title }}</h5>
     <p v-if="!small">{{ description }}</p>
-    <div v-if="!small" class="next">
+    <div v-if="!small && showArrow" class="next">
       <i class="fa fa-angle-right"></i>
     </div>
   </nuxt-link>
@@ -18,21 +18,25 @@ export default {
   props: {
     link: {
       type: String,
-      required: true,
+      required: true
     },
     title: {
       type: String,
-      required: true,
+      required: true
     },
     description: {
       type: String,
-      default: '',
+      default: ''
     },
     small: {
       type: Boolean,
-      default: false,
+      default: false
     },
-  }  
+    showArrow: {
+      type: Boolean,
+      default: true
+    }
+  }
 }
 </script>
 
@@ -42,7 +46,7 @@ export default {
     display: block;
     background: #FFFFFF;
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
-    border-radius: 5;
+    border-radius: 5px;
     padding: 30px;
     text-align: center;
     transition: all 0.3s ease 0s;
@@ -104,21 +108,19 @@ export default {
     }
 
     .icon {
-      width: 67px;
-      height: 67px;
-      line-height: 70px;
+      width: 100px;
+      height: 100px;
+      line-height: 115px;
       margin: auto;
       position: relative;
       margin-bottom: 20px;
       background: #E2FBFF;
       border-radius: 5px;
 
-      i {
-        font-size: 18px;
-        color: #169CB1;
-      }
+      font-size: 2.5em;
+      color: #169CB1;
     }
-    
+
     .features-title {
       font-weight: 400;
       font-size: 16px;
