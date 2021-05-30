@@ -1,12 +1,9 @@
 <template>
   <div>
     <page-banner
-      :title="'All Areas'"
-      :imgSrc="'http://demo.tempload.com/alya/assets/images/photos/parallax-counter.jpg'"
-      :breadcrumbs="[{
-        name: 'Areas',
-        link: 'areas'
-       }]" />
+      :title="title"
+      :imgSrc="imgSrc"
+      :breadcrumbs="breadcrumbs" />
 
     <div class="content col-8">
       <div
@@ -37,7 +34,15 @@ export default {
   },
   data () {
     return {
-      items: []
+      items: [],
+      title: 'All Areas',
+      imgSrc: 'http://demo.tempload.com/alya/assets/images/photos/parallax-counter.jpg',
+      breadcrumbs: [
+        {
+          name: 'Areas',
+          link: 'areas'
+        }
+      ]
     }
   },
   async mounted () {
