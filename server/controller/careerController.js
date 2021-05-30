@@ -37,8 +37,21 @@ exports.add = async function (req, res) {
     res.json(career);
     return
   }
-  career = new Career();
-  career.title = req.body.title;
+
+  result = false
+  for (let i = 0; i < req.files.length; i++) {
+    if (req.files[i].fieldname === 'photo') {
+      req.body.photo = req.files[i].path
+      result = true
+      break
+    }
+  }
+  if (!result) {
+    res.status(400).json(invalidRequest)
+    return
+  }
+
+  career = new Career(req.body);
   career = await career.save();
 
   res.json({_id: career._id, title: career.title});
