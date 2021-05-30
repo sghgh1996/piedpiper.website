@@ -78,3 +78,22 @@ exports.findById = async function (req, res) {
     res.status(400).json(invalidRequest);
   }
 }
+
+exports.findNewProducts = async function (req, res) {
+  if(!req.params.count) {
+    res.status(400).json(invalidRequest);
+    return;
+  }
+  try {
+    let count = parseInt(req.params.count)
+    let result = await Product.find().sort({'_id': -1}).limit(count).select('-__v');
+    if(result) {
+      res.json(result);
+    }else{
+      res.status(404).json(notFound);
+    }
+  }catch (e) {
+    console.log(e)
+    res.status(400).json(invalidRequest);
+  }
+}

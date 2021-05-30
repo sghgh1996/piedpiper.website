@@ -25,6 +25,7 @@ router.get('/area/:id', areaController.findById)
 router.post('/product/add', productController.add)
 router.get('/product/list', productController.findAll)
 router.get('/product/:id', productController.findById)
+router.get('/product/new/:count', productController.findNewProducts)
 
 router.post('/people/assign', personController.assigns)
 
