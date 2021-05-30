@@ -53,6 +53,7 @@ export default {
     position: relative;
     margin-bottom: 45px;
     border-radius: 5px;
+    height: calc(100% - 45px);
 
     &:before {
       content: '';
@@ -142,6 +143,13 @@ export default {
       z-index: 2;
       transition: all 0.3s ease 0s;
       margin-bottom: 20px;
+      word-wrap: break-word;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+
     }
 
     .next {

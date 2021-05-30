@@ -1,27 +1,21 @@
 <template>
   <div>
     <page-banner
-      :title="'Dummy Title'"
-      :imgSrc="'http://demo.tempload.com/alya/assets/images/photos/parallax-counter.jpg'"
-      :breadcrumbs="[{
-        name: 'salam',
-        link: 'https://www.google.com/'
-       }, {
-        name: 'chetori',
-        link: 'https://www.facebook.com/'
-      }]" />
+      :title="title"
+      :imgSrc="imgSrc"
+      :breadcrumbs="breadcrumbs" />
 
     <div class="content col-8">
       <div
         class="col-lg-3 col-md-6 col-sm-6 col-12"
-        v-for="i in 9"
-        :key="i">
+        v-for="(item , index) in items"
+        :key="index">
         <image-feature-item
-          :title="'New Products ' + i"
-          link="/products/new"
-          description="salam salam"
+          :title="item.title"
+          :link="`areas/${item._id}`"
+          :description="item.overview"
           :showArrow="false"
-          imgSrc="https://randomwordgenerator.com/img/picture-generator/brushes-1683134_640.jpg"
+          :imgSrc="item.photo"
           :small="false">
         </image-feature-item>
       </div>
@@ -37,6 +31,24 @@ export default {
   components: {
     PageBanner,
     ImageFeatureItem
+  },
+  data () {
+    return {
+      items: [],
+      title: 'All Areas',
+      imgSrc: 'http://demo.tempload.com/alya/assets/images/photos/parallax-counter.jpg',
+      breadcrumbs: [
+        {
+          name: 'Areas',
+          link: 'areas'
+        }
+      ]
+    }
+  },
+  async mounted () {
+    this.items = await this.$axios.$get('/area/list')
+    console.log(this.items)
+    return {}
   }
 }
 </script>
@@ -46,6 +58,6 @@ export default {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 50px auto 0 auto;
+  margin: 45px auto 0 auto;
 }
 </style>
