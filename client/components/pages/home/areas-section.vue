@@ -10,6 +10,7 @@
                   :title="area.title"
                   :link="area.link"
                   :description="area.description"
+                  :logo="area.logo"
                 />
               </div>
             </template>
@@ -32,25 +33,25 @@ export default {
       areas: [ // TODO: api call
         {
           title: 'Cloud Solutions',
-          logo: '',
+          logo: 'cloud',
           description: 'Morbilling pharetra sapiening ut mattis viverra. Curabi tur magna.',
           link: '#'
         },
         {
-          title: 'Network Services',
-          logo: '',
+          title: 'Security',
+          logo: 'shield-alt',
           description: 'Donec pellentesque turpis utium lorem imperdiet semper viverra.',
           link: '#'
         },
         {
-          title: 'Webcast Services',
-          logo: '',
+          title: 'Artificial Intelligence',
+          logo: 'robot',
           description: 'Facilisis arcu ligula, malesuada id tincidunt laoreet, facilisis at justo.',
           link: '#'
         },
         {
-          title: 'Disaster Recovery',
-          logo: '',
+          title: 'Internet of Things',
+          logo: 'network-wired',
           description: 'Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo.',
           link: '#'
         }

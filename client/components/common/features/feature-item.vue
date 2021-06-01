@@ -2,7 +2,7 @@
   <nuxt-link :to="link" class="features-small-item">
     <div class="icon">
       <slot name="image">
-        <i class="fa fa-cloud"></i>
+        <i :class="`fa fa-${logo}`"></i>
       </slot>
     </div>
     <h5 class="features-title">{{ title }}</h5>
@@ -35,6 +35,10 @@ export default {
     showArrow: {
       type: Boolean,
       default: true
+    },
+    logo: {
+      type: String,
+      default: 'cloud'
     }
   }
 }

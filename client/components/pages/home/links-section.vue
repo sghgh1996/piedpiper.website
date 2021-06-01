@@ -9,6 +9,7 @@
                 title="New Products"
                 link="/products/new"
                 :small="true"
+                logo="server"
               />
             </div>
             <div class="col-md-3 offset-md-2 col-6">
@@ -16,11 +17,8 @@
                 title="All Careers"
                 link="/careers"
                 :small="true"
-              >
-                <template #image>
-                  <i class="fa fa-plus"></i>
-                </template>
-              </feature-item>
+                logo="laptop-house"
+              />
             </div>
 					</div>
 				</div>
@@ -35,6 +33,6 @@ import FeatureItem from '../../common/features/feature-item'
 export default {
   components: {
     FeatureItem
-  },
+  }
 }
 </script>
