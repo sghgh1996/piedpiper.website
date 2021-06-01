@@ -11,27 +11,25 @@
 				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
 					<h5>Helpful Links</h5>
 					<ul class="footer-nav">
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>About Us</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Features</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>FAQ’s</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Blog</span></a></li>
+						<li><a href="/areas"><i class="fa fa-angle-right"></i><span>Areas</span></a></li>
+						<li><a href="/products"><i class="fa fa-angle-right"></i><span>Products</span></a></li>
+						<li><a href="/people"><i class="fa fa-angle-right"></i><span>People</span></a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
 					<h5>Support</h5>
 					<ul class="footer-nav">
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Privacy Policy</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Terms of Use</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Support Center</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Contact</span></a></li>
+						<li><a href="/about"><i class="fa fa-angle-right"></i><span>About Us</span></a></li>
+						<li><a href="/contact"><i class="fa fa-angle-right"></i><span>Contact Us</span></a></li>
+						<li><a href="/faq"><i class="fa fa-angle-right"></i><span>FAQ's</span></a></li>
 					</ul>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-12">
 					<h5>Contact Us</h5>
 					<div class="address">
-						<p>455 West Orchard Street<br>Kings Mountain, NC 28086</p>
-						<p>Phone: (272) 211-7370</p>
-						<p><span>E-Mail:</span><a href="#">support@yourbrand.com</a></p>
+						<p>Piazza Leonardo da Vinci, 32<br>20133 Milano MI</p>
+						<p>Phone: +39 02 23991</p>
+						<p><span>E-Mail:</span><a href="#">contact@piedpiper.com</a></p>
 						<!-- <ul class="social">
 							<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
 							<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
