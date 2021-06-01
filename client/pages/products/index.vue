@@ -2,8 +2,9 @@
   <div>
     <page-banner
       :title="title"
-      :imgSrc="imgSrc"
-      :breadcrumbs="breadcrumbs" />
+      :imgSrc="$image('hero.jpg')"
+      :breadcrumbs="breadcrumbs"
+    />
 
     <div class="content col-8">
       <div
@@ -12,7 +13,7 @@
         :key="index">
         <image-feature-item
           :title="item.title"
-          :link="`products/${item._id}`"
+          :link="item._id"
           :description="item.information"
           :showArrow="false"
           :imgSrc="item.photo"
@@ -20,7 +21,6 @@
         </image-feature-item>
       </div>
     </div>
-
   </div>
 </template>
 <script>
@@ -36,7 +36,6 @@ export default {
     return {
       items: [],
       title: 'All Products',
-      imgSrc: 'http://demo.tempload.com/alya/assets/images/photos/parallax-counter.jpg',
       breadcrumbs: [
         {
           name: 'Products',
@@ -47,8 +46,6 @@ export default {
   },
   async mounted () {
     this.items = await this.$axios.$get('/product/list')
-    console.log(this.items)
-    return {}
   }
 }
 </script>
