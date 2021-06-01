@@ -10,25 +10,17 @@
 
 						<ul class="nav">
 							<li><a href="/">Home</a></li>
+							<li><a href="/areas">Areas</a></li>
+							<li><a href="/products">Products</a></li>
+							<li><a href="/people">People</a></li>
 							<li class="submenu">
 								<a href="javascript:;">Discover</a>
 								<ul>
-									<li><a href="/">Features</a></li>
-									<li><a href="/">Our Team</a></li>
-									<li><a href="/">Pricing Plans</a></li>
-									<li><a href="/">Latests Blogs</a></li>
+									<li><a href="/about">About Us</a></li>
+									<li><a href="/contact">Contact Us</a></li>
+									<li><a href="/faq">FAQs</a></li>
 								</ul>
 							</li>
-							<li class="submenu">
-								<a href="javascript:;">Pages</a>
-								<ul>
-									<li><a href="/">About Us</a></li>
-									<li><a href="/">Features</a></li>
-									<li><a href="/">FAQ's</a></li>
-									<li><a href="/">Blog</a></li>
-								</ul>
-							</li>
-							<li><a href="/">Contact</a></li>
 						</ul>
 						<a class="menu-trigger">
 							<span>Menu</span>
