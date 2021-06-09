@@ -2,21 +2,21 @@
   <div>
     <page-banner
       :title="title"
-      :imgSrc="$image('hero.jpg')"
+      :img-src="$image('hero.jpg')"
       :breadcrumbs="breadcrumbs"
     />
 
     <div class="content col-8">
       <div
-        class="col-lg-3 col-md-6 col-sm-6 col-12"
         v-for="(item , index) in items"
-        :key="index">
+        :key="index"
+        class="col-lg-3 col-md-6 col-sm-6 col-12">
         <image-feature-item
           :title="item.title"
           :link="item._id"
           :description="item.information"
-          :showArrow="false"
-          :imgSrc="item.photo"
+          :show-arrow="false"
+          :img-src="item.photo"
           :small="false">
         </image-feature-item>
       </div>

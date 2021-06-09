@@ -1,10 +1,9 @@
 <template>
   <section class="page">
-    <page-hero title="Our People">
-      <template #breadcrumbs>
-        <page-breadcrumbs :items="breadcrumbsItems" />
-      </template>
-    </page-hero>
+    <page-banner
+      :title="title"
+      :img-src="$image('hero.jpg')"
+      :breadcrumbs="breadcrumbsItems" />
 
 		<div class="container">
       <div class="row">
@@ -24,12 +23,11 @@
 </template>
 
 <script>
-import PageBreadcrumbs from '../../components/common/page-breadcrumbs.vue'
-import PageHero from '../../components/common/page-hero.vue'
+import PageBanner from '../../components/common/page-banner.vue'
 import PersonItem from '../../components/common/people/person-item.vue'
 
 export default {
-  components: { PersonItem, PageHero, PageBreadcrumbs },
+  components: { PersonItem, PageBanner },
   data () {
     return {
       people: [],

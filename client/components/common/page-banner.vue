@@ -5,7 +5,7 @@
     <div class="card-title">
       <div>
         <h1>{{ title }}</h1>
-        <span>
+        <span v-if="breadcrumbs.length">
           <page-breadcrumbs :items="breadcrumbs" />
         </span>
       </div>

@@ -2,7 +2,7 @@
   <div>
     <page-banner
       :title="title"
-      :imgSrc="imgSrc"
+      :img-src="$image('hero.jpg')"
       :breadcrumbs="breadcrumbs" />
 
     <div class="content col-8">
@@ -36,7 +36,6 @@ export default {
     return {
       items: [],
       title: 'All Areas',
-      imgSrc: 'http://demo.tempload.com/alya/assets/images/photos/parallax-counter.jpg',
       breadcrumbs: [
         {
           name: 'Areas',

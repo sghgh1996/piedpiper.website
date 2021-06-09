@@ -30,13 +30,6 @@
 						<p>Piazza Leonardo da Vinci, 32<br>20133 Milano MI</p>
 						<p>Phone: +39 02 23991</p>
 						<p><span>E-Mail:</span><a href="mailto:sadjad.ghanbarynasab@mail.polimi.it">contact@piedpiper.com</a></p>
-						<!-- <ul class="social">
-							<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-							<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
-							<li><a href="#"><i class="fa fa-github-square"></i></a></li>
-						</ul> -->
 					</div>
 				</div>
 			</div>
