@@ -5,26 +5,26 @@
 				<div class="row">
 					<div class="col-lg-3 col-md-6 col-sm-12">
 						<div class="count-item">
-							<strong>96</strong>
-							<span>Project<br>Complate</span>
+							<strong>38</strong>
+							<span>Completed<br>Projects</span>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12">
 						<div class="count-item">
 							<strong>190</strong>
-							<span>Happy<br>Customer</span>
+							<span>Happy<br>Customers</span>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12">
 						<div class="count-item">
-							<strong>12</strong>
+							<strong>18</strong>
 							<span>Experienced<br>Staff</span>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12">
 						<div class="count-item">
-							<strong>46</strong>
-							<span>Ongoing<br>Project</span>
+							<strong>12</strong>
+							<span>Ongoing<br>Projects</span>
 						</div>
 					</div>
 				</div>

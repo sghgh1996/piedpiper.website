@@ -28,6 +28,16 @@ export default {
     TeamSection,
     StatsSection,
     ContactSection
+  },
+  head: {
+    title: 'Pied Piper',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'PiedPiper is a multinational company that focuses on different areas.'
+      }
+    ]
   }
 }
 </script>

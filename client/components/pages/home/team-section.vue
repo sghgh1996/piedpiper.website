@@ -9,7 +9,7 @@
 				</div>
 				<div class="offset-lg-3 col-lg-6">
 					<div class="center-text">
-						<p>Donec vulputate urna sed rutrum venenatis. Cras consequat magna quis arcu elementum, quis congue risus volutpat.</p>
+						<p>We are a growing family of 50+ professionals focused on problems worth solving and solutions at enterprise scale.</p>
 					</div>
 				</div>
 			</div>

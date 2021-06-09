@@ -12,9 +12,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-5 col-md-12 col-sm-12">
-						<h1>Industry Leading Managed Services and Staffing <span>Solutions</span></h1>
-						<p>Proven methods to capture business priorities and goals as well as current pain points that enables measurable business outcomes.</p>
-						<a href="#" class="btn-primary-line">LEARN MORE</a>
+						<h1>Transforming business. One company at a time. <span>Pied Piper</span></h1>
+						<p>
+							We use data, software, and insights to solve our customers' most substantial technology challenges.
+						</p>
+						<button @click="learnMoreClickHandler" class="btn-primary-line">LEARN MORE</button>
 					</div>
 				</div>
 			</div>
@@ -23,7 +25,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    learnMoreClickHandler () {
+      document.getElementById('information-section').scrollIntoView()
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>

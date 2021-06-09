@@ -1,5 +1,5 @@
 <template>
-  <section class="section colored padding-bottom-90">
+  <section class="section colored padding-bottom-90" id="information-section">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -9,7 +9,9 @@
 				</div>
 				<div class="offset-lg-3 col-lg-6">
 					<div class="center-text">
-						<p>Donec vulputate urna sed rutrum venenatis. Cras consequat magna quis arcu elementum, quis congue risus volutpat.</p>
+						<p>
+							Founded in Italy in 2021 by some students in Politecnico di Milano. Today PiedPiper is a multinational company that focuses on different areas it's consulting offering on hard technology challenges with large-scale business impact in <b>cloud solutions</b>, <b>artificial intelligence</b>, <b>security</b> and <b>IoT</b>.
+						</p>
 					</div>
 				</div>
 			</div>

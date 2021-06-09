@@ -6,7 +6,7 @@
           <nuxt-link to="/" class="logo">
             <img src="~/assets/images/piedpiper-logo.png" alt="piedpiper"/>
           </nuxt-link>
-					<div class="text">Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.</div>
+					<div class="text"> We use data, software, and insights to solve our customers' most substantial technology challenges.</div>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
 					<h5>Helpful Links</h5>
@@ -29,7 +29,7 @@
 					<div class="address">
 						<p>Piazza Leonardo da Vinci, 32<br>20133 Milano MI</p>
 						<p>Phone: +39 02 23991</p>
-						<p><span>E-Mail:</span><a href="#">contact@piedpiper.com</a></p>
+						<p><span>E-Mail:</span><a href="mailto:sadjad.ghanbarynasab@mail.polimi.it">contact@piedpiper.com</a></p>
 						<!-- <ul class="social">
 							<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
 							<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
