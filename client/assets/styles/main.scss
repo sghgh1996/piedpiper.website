@@ -870,76 +870,21 @@ pages
 */
 .page {
   background: #fff;
-}
 
-.page .page-bottom {
-  padding-top: 100px;
-  padding-bottom: 70px;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.88px;
-  line-height: 28px;
-  color: #6F8BA4;
-  background: #F9FAFF;
-}
+  .page-content {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.88px;
+    line-height: 28px;
+    color: #6F8BA4;
+    background: #F9FAFF;
 
-.page .page-bottom p {
-  margin-bottom: 28px;
-}
-
-.page .page-bottom .about {
-  position: relative;
-  float: left;
-  width: 100%;
-  margin-bottom: 100px;
-  text-align: center;
-}
-
-.page .page-bottom .about h2 {
-  font-size: 30px;
-  color: #3B566E;
-  margin-bottom: 30px;
-}
-
-.page .page-bottom .about h5 {
-  font-style: italic;
-  font-size: 20px;
-  color: #6F8BA4;
-  letter-spacing: 1.25px;
-  text-align: center;
-  line-height: 28px;
-  margin-top: -20px;
-}
-
-.page .page-bottom .about .about-image {
-  min-height: 500px;
-  position: relative;
-  margin-top: 50px;
-  margin-bottom: 80px;
-}
-
-.page .page-bottom .about .about-image .img-1 {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: 2;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.13);
-}
-
-.page .page-bottom .about .about-image .img-2 {
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  z-index: 1;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.13);
+    p {
+      margin-bottom: 28px;
+    }
+  }
 }
 
 .page .page-bottom .features-small-item {
