@@ -12,10 +12,11 @@ exports.findAll = async function (req, res) {
 
 exports.add = async function (req, res) {
   // validate body
+  console.log(req.body);
   let validator = new Validator(req.body,{
     title: 'required',
     overview: 'required',
-    solutions: 'required',
+    description: 'required',
   })
   let result = await validator.check();
   if(!result) {
@@ -33,9 +34,12 @@ exports.add = async function (req, res) {
     }
   }
   if(!result) {
-    res.status(400).json(invalidRequest);
+    res.status(401).json(invalidRequest);
     return
   }
+
+  console.log(req.body.solutions)
+  req.body.solutions = JSON.parse(req.body.solutions)
 
 
   let area = new Area(req.body)
