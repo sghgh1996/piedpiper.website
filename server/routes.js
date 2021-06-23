@@ -5,28 +5,28 @@ const areaController = require('./controller/areaController')
 const productController = require('./controller/productController')
 const careerController = require('./controller/careerController')
 
-router.get('/', (req, res) => {
+router.get('/api/', (req, res) => {
   res.send('Up and running')
 })
 
-router.post('/people/add', personController.add)
-router.get('/people/list', personController.findAll)
-router.get('/people/career/:id', personController.findByRole)
-router.get('/people/:id', personController.findById)
+router.post('/api/people/add', personController.add)
+router.get('/api/people/list', personController.findAll)
+router.get('/api/people/career/:id', personController.findByRole)
+router.get('/api/people/:id', personController.findById)
 
-router.post('/career/add', careerController.add)
-router.get('/career/list', careerController.findAll)
-router.get('/career/:id', careerController.find)
+router.post('/api/career/add', careerController.add)
+router.get('/api/career/list', careerController.findAll)
+router.get('/api/career/:id', careerController.find)
 
-router.post('/area/add', areaController.add)
-router.get('/area/list', areaController.findAll)
-router.get('/area/:id', areaController.findById)
+router.post('/api/area/add', areaController.add)
+router.get('/api/area/list', areaController.findAll)
+router.get('/api/area/:id', areaController.findById)
 
-router.post('/product/add', productController.add)
-router.get('/product/list', productController.findAll)
-router.get('/product/:id', productController.findById)
-router.get('/product/new/:count', productController.findNewProducts)
+router.post('/api/product/add', productController.add)
+router.get('/api/product/list', productController.findAll)
+router.get('/api/product/:id', productController.findById)
+router.get('/api/product/new/:count', productController.findNewProducts)
 
-router.post('/people/assign', personController.assigns)
+router.post('/api/people/assign', personController.assigns)
 
 module.exports = router
