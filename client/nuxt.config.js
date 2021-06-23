@@ -50,7 +50,7 @@ export default {
   // Runtime Config
   publicRuntimeConfig: {
     axios: {
-      baseURL: 'http://hyper.remarked.ir:3000'
+      baseURL: 'http://188.213.168.170/api'
     }
   },
 
