@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const multer = require('multer');
 const morgan = require('morgan');
 const cors = require('cors');
+const path = require('path');
 
 
 // morgan http logger
@@ -51,7 +52,8 @@ app.use(bodyParser.urlencoded({ extendend: true }));
 // for parsing multipart/form-data
 app.use(upload.any());
 
-app.use(express.static(process.env.IMAGES))
+
+app.use(process.env.IMAGES,express.static(path.join(__dirname, process.env.IMAGES)))
 app.use(routes)
 
 app.listen(process.env.HYPER_PORT, process.env.HYPER_HOST ,(err) => {
