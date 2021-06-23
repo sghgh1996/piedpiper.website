@@ -53,4 +53,8 @@ export default {
       baseURL: 'http://hyper.remarked.ir:3000'
     }
   },
+
+  server: {
+    port: 3001
+  }
 }
