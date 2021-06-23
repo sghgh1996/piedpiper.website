@@ -51,7 +51,7 @@ app.use(bodyParser.urlencoded({ extendend: true }));
 // for parsing multipart/form-data
 app.use(upload.any());
 
-app.use(express.static('images'))
+app.use(express.static(process.env.IMAGES))
 app.use(routes)
 
 app.listen(process.env.HYPER_PORT, process.env.HYPER_HOST ,(err) => {
