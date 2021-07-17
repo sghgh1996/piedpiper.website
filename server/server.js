@@ -16,7 +16,7 @@ dotenv.config()
 // storage config for files
 let storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, process.env.IMAGES);
+    cb(null, '.'+process.env.IMAGES);
   },
   filename: function (req, file, cb) {
     cb(null, `${Date.now()}_${file.originalname}`);

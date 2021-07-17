@@ -4,7 +4,8 @@ const Schema = mongoose.Schema;
 const AreaSchema = new Schema({
   title: String,
   overview: String,
-  solutions: String,
+  description: String,
+  solutions: [{_id: false, image: String, text: String, title: String}],
   photo: String,
   products: [{ type: Schema.Types.ObjectId, ref: "Product" }],
   people: [{ type: Schema.Types.ObjectId, ref: "Person" }],
