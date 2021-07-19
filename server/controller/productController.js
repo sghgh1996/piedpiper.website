@@ -7,7 +7,7 @@ const notFound = {msg: 'Not Found'};
 const Validator = require('validatorjs');
 
 exports.findAll = async function (req, res) {
-  let result = await Product.find({}).select('-__v');
+  let result = await Product.find({}).populate('area').populate('people').select('-__v');
   res.json(result);
 }
 
@@ -41,7 +41,7 @@ exports.add = async function (req, res) {
 
   let product = new Product(req.body)
   product = await product.save()
-  result = await Product.findById(product._id).select('-__v')
+  result = await Product.findById(product._id).populate('area').populate('people').select('-__v')
 
   // try to find the area
   try {
@@ -68,7 +68,7 @@ exports.findById = async function (req, res) {
     return;
   }
   try {
-    let result = await Product.findById(req.params.id).select('-__v');
+    let result = await Product.findById(req.params.id).populate('area').populate('people').select('-__v');
     if(result) {
       res.json(result);
     }else{
@@ -86,7 +86,7 @@ exports.findNewProducts = async function (req, res) {
   }
   try {
     let count = parseInt(req.params.count)
-    let result = await Product.find().sort({'_id': -1}).limit(count).select('-__v');
+    let result = await Product.find().sort({'_id': -1}).limit(count).populate('area').populate('people').select('-__v');
     if(result) {
       res.json(result);
     }else{

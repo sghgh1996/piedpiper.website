@@ -8,7 +8,7 @@ const notFound = { msg: 'Not Found' }
 const Validator = require('validatorjs')
 
 exports.findAll = async function (req, res) {
-  let result = await Person.find({}).populate('role').select('-__v')
+  let result = await Person.find({}).populate('role').populate('area').populate('products').select('-__v')
   res.json(result)
 }
 
@@ -47,7 +47,7 @@ exports.add = async function (req, res) {
 
   let person = new Person(req.body)
   person = await person.save()
-  result = await Person.findById(person._id).populate('role').select('-__v')
+  result = await Person.findById(person._id).populate('role').populate('area').populate('products').select('-__v')
 
   // try to find the area
   try {
@@ -76,7 +76,7 @@ exports.findByRole = async function (req, res) {
   }
   try {
 
-    let result = await Person.find({ role: req.params.id }).populate('role').select('-__v')
+    let result = await Person.find({ role: req.params.id }).populate('role').populate('area').populate('products').select('-__v')
     console.log(result)
     if (result) {
       res.json(result)
@@ -94,7 +94,7 @@ exports.findById = async function (req, res) {
     return
   }
   try {
-    let result = await Person.findById(req.params.id).populate('role').select('-__v')
+    let result = await Person.findById(req.params.id).populate('role').populate('area').populate('products').select('-__v')
     if (result) {
       res.json(result)
     } else {
