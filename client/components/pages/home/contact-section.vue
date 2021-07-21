@@ -53,8 +53,7 @@
 
       .sub-info {
         letter-spacing: 1px;
-        margin: auto;
-        margin-bottom: 40px;
+        margin: auto auto 40px;
         font-size: 0.8em;
         max-width: 60%;
 

@@ -6,6 +6,7 @@
 					<nav class="main-nav">
 						<nuxt-link to="/" class="logo">
 							<img src="~/assets/images/piedpiper-logo.png" alt="piedpiper"/>
+              <h1 class="logo-title">PiedPiper</h1>
 						</nuxt-link>
 
 						<ul class="nav">
@@ -40,6 +41,7 @@ export default {}
 
 .header-area {
 	height: 100px;
+  padding: 25px;
 	// position: fixed;
   // top: 0;
   // left: 0;
@@ -48,13 +50,25 @@ export default {}
 	.main-nav {
 		.logo {
 			float: left;
-			margin-top: 27px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+			//margin-top: 25px;
+      img {
+        max-height: 50px;
+      }
+      h1{
+        display: inline-block;
+        color: #0C869A;
+        font-size: 2em;
+        margin: 10px 20px
+      }
 		}
 
 		.nav {
-			float: left;
-			margin-top: 27px;
-			margin-left: 80px;
+			float: right;
+			//margin-top: 27px;
+			//margin-left: 80px;
 
 			li {
 				padding-left: 20px;
@@ -73,9 +87,8 @@ export default {}
 					line-height: 40px;
 					border: transparent;
 					letter-spacing: 1px;
-
 					&:hover {
-						color: #6F8BA4;
+						color: #0C869A;
 					}
 				}
 
