@@ -48,8 +48,11 @@
     padding-top: 70px;
     border-top: 1px solid #EEEEEE;
 
-    img.logo {
-      margin-bottom: 30px;
+    .logo {
+      img{
+        max-width: 100px;
+        margin-bottom: 30px;
+      }
     }
 
     .text {
@@ -143,8 +146,8 @@
       text-align: center;
       border-top: 1px solid #DAE6FD;
       margin-top: 30px;
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding-top: 5px;
+      padding-bottom: 5px;
       font-weight: 400;
       font-size: 14px;
       color: #6F8BA4;
