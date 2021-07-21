@@ -9,7 +9,7 @@
                 <feature-item
                   :title="area.title"
                   :link="`/areas/${area._id}`"
-                  :description="area.description"
+                  :description="area.overview"
                   :logo="area.logo"
                 />
               </div>

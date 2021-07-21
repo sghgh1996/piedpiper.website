@@ -10,14 +10,14 @@
         class="col-lg-3 col-md-6 col-sm-6 col-12"
         v-for="(item , index) in items"
         :key="index">
-        <image-feature-item
+        <feature-item
           :title="item.title"
           :link="`areas/${item._id}`"
           :description="item.overview"
           :showArrow="false"
-          :imgSrc="item.photo"
+          :logo="item.logo"
           :small="false">
-        </image-feature-item>
+        </feature-item>
       </div>
     </div>
 
@@ -25,12 +25,12 @@
 </template>
 <script>
 import PageBanner from '../../components/common/page-banner'
-import ImageFeatureItem from '../../components/common/features/image-feature-item'
+import FeatureItem from '../../components/common/features/feature-item'
 
 export default {
   components: {
     PageBanner,
-    ImageFeatureItem
+    FeatureItem
   },
   data () {
     return {
