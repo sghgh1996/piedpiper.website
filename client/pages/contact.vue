@@ -3,7 +3,12 @@
     <page-banner
       title="Contact Us"
       :img-src="$image('hero.jpg')"
-      :breadcrumbs="[]"
+      :breadcrumbs="[
+        {
+          name: 'Contact Us',
+          link: '/contact'
+        }
+      ]"
     />
 
     <div class="page-content padding-bottom-80">

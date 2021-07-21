@@ -3,7 +3,10 @@
     <page-banner
       title="Pied Piper"
       :img-src="$image('hero.jpg')"
-      :breadcrumbs="[]"
+      :breadcrumbs="[{
+          name: 'About Us',
+          link: '/about'
+        }]"
     />
 
     <div class="page-content">

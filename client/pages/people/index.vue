@@ -33,11 +33,7 @@ export default {
       people: [],
       breadcrumbsItems: [
         {
-          name: 'Home',
-          link: '/'
-        },
-        {
-          name: 'All People',
+          name: 'People',
           link: '/people'
         }
       ]

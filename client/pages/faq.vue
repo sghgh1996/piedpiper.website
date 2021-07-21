@@ -3,7 +3,10 @@
     <page-banner
       title="Frequently Asked Questions"
       :img-src="$image('hero.jpg')"
-      :breadcrumbs="[]"
+      :breadcrumbs="[{
+          name: 'FAQ\'s',
+          link: '/faq'
+        }]"
     />
 
     <div class="page-content padding-bottom-80">

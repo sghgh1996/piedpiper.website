@@ -8,7 +8,7 @@
               <div class="col-lg-3 col-md-6 col-sm-6 col-12" :key="index">
                 <feature-item
                   :title="area.title"
-                  :link="area.link"
+                  :link="`/areas/${area._id}`"
                   :description="area.description"
                   :logo="area.logo"
                 />
@@ -35,20 +35,10 @@ export default {
   },
   mounted () {
     this.$axios.get('/area/list')
-      .then((response) => { // call the api and get the list from the database
-        for (let i = 0; i < response.data.length; i++) {
-          const area = {
-            title: response.data[i].title,
-            logo: response.data[i].logo,
-            description: response.data[i].overview,
-            link: `/areas/${response.data[i]._id}`
-          }
-          this.areas.push(area)
-        }
+      .then((response) => {
+        this.areas = response.data
       })
-      .catch((err) => {
-        console.log(err)
-      })
+      .catch((err) => { console.log(err) })
   }
 }
 </script>
