@@ -15,7 +15,7 @@
 							<li><a href="/products">Products</a></li>
 							<li><a href="/people">People</a></li>
 							<li class="submenu">
-								<a href="javascript:;">Discover</a>
+								<a href="javascript:;">Discover<i class="fas fa-chevron-down"></i></a>
 								<ul>
 									<li><a href="/about">About Us</a></li>
 									<li><a href="/contact">Contact Us</a></li>
@@ -95,6 +95,10 @@ export default {}
 				&.submenu {
 					position: relative;
 					padding-right: 35px;
+
+          i{
+            margin-left: 5px;
+          }
 
 					ul {
 						position: absolute;
