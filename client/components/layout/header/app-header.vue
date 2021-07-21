@@ -10,7 +10,7 @@
 						</nuxt-link>
 
 						<ul class="nav">
-							<li><a href="/">Home</a></li>
+<!--							<li><a href="/">Home</a></li>-->
 							<li><a href="/areas">Areas</a></li>
 							<li><a href="/products">Products</a></li>
 							<li><a href="/people">People</a></li>
