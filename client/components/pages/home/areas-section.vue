@@ -1,9 +1,9 @@
 <template>
   <section class="section areas-home">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="row">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
             <template v-for="(area, index) in areas">
               <div class="col-lg-3 col-md-6 col-sm-6 col-12" :key="index">
                 <feature-item
@@ -14,11 +14,11 @@
                 />
               </div>
             </template>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -30,54 +30,46 @@ export default {
   },
   data () {
     return {
-      areas: [ // TODO: api call
-        {
-          title: 'Cloud Solutions',
-          logo: 'cloud',
-          description: 'Morbilling pharetra sapiening ut mattis viverra. Curabi tur magna.',
-          link: '#'
-        },
-        {
-          title: 'Security',
-          logo: 'shield-alt',
-          description: 'Donec pellentesque turpis utium lorem imperdiet semper viverra.',
-          link: '#'
-        },
-        {
-          title: 'Artificial Intelligence',
-          logo: 'robot',
-          description: 'Facilisis arcu ligula, malesuada id tincidunt laoreet, facilisis at justo.',
-          link: '#'
-        },
-        {
-          title: 'Internet of Things',
-          logo: 'network-wired',
-          description: 'Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo.',
-          link: '#'
-        }
-      ]
+      areas: []
     }
+  },
+  mounted () {
+    this.$axios.get('/area/list')
+      .then((response) => { // call the api and get the list from the database
+        for (let i = 0; i < response.data.length; i++) {
+          const area = {
+            title: response.data[i].title,
+            logo: response.data[i].logo,
+            description: response.data[i].overview,
+            link: `/areas/${response.data[i]._id}`
+          }
+          this.areas.push(area)
+        }
+      })
+      .catch((err) => {
+        console.log(err)
+      })
   }
 }
 </script>
 
 <style lang="scss" scoped>
+.areas-home {
+  padding-top: 0px;
+  margin-top: -100px;
+}
+
+@media (max-width: 1200px) {
   .areas-home {
     padding-top: 0px;
-    margin-top: -100px;
+    margin-top: -10px;
   }
+}
 
-  @media (max-width: 1200px) {
-    .areas-home {
-      padding-top: 0px;
-      margin-top: -10px;
-    }
+@media (max-width: 991px) {
+  .areas-home {
+    padding-top: 100px;
+    margin-top: 0px;
   }
-
-  @media (max-width: 991px) {
-    .areas-home {
-      padding-top: 100px;
-      margin-top: 0px;
-    }
-  }
+}
 </style>

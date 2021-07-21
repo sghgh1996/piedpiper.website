@@ -16,7 +16,8 @@
 						<p>
 							We use data, software, and insights to solve our customers' most substantial technology challenges.
 						</p>
-						<button @click="learnMoreClickHandler" class="btn-primary-line">LEARN MORE</button>
+<!--						<button @click="learnMoreClickHandler" class="btn-primary-line">LEARN MORE</button>-->
+            <nuxt-link class="btn-primary-line" to="/contact">Contact Us</nuxt-link>
 					</div>
 				</div>
 			</div>

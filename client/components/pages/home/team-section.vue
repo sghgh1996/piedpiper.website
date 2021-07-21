@@ -7,11 +7,11 @@
 						<h2 class="section-title">Our Team</h2>
 					</div>
 				</div>
-				<div class="offset-lg-3 col-lg-6">
-					<div class="center-text">
-						<p>We are a growing family of 50+ professionals focused on problems worth solving and solutions at enterprise scale.</p>
-					</div>
-				</div>
+<!--				<div class="offset-lg-3 col-lg-6">-->
+<!--					<div class="center-text">-->
+<!--						<p>We are a growing family of professionals focused on problems worth solving and solutions at enterprise scale.</p>-->
+<!--					</div>-->
+<!--				</div>-->
 			</div>
 
 			<div class="row">

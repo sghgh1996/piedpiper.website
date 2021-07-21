@@ -5,7 +5,8 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="info">
-							<p>We design and develop <span>web apps</span> that delight your users and grow your business.</p>
+              <strong><p>We design cutting edge technologies</p></strong>
+              <p class="sub-info">We systematically develop, and invest in, innovative software and technology products to deliver our solutions to global markets.</p>
 							<nuxt-link class="btn-white-line" to="/contact">Contact Us</nuxt-link>
 						</div>
 					</div>
@@ -50,12 +51,23 @@
       padding-top: 20px;
       padding-bottom: 20px;
 
-      p {
+      .sub-info {
         letter-spacing: 1px;
+        margin: auto;
         margin-bottom: 40px;
+        font-size: 0.8em;
+        max-width: 60%;
 
         span {
           text-decoration: underline;
+        }
+      }
+
+      strong {
+        p {
+          letter-spacing: 1px;
+          margin-bottom: 0;
+          font-size: 1.5em;
         }
       }
 

@@ -58,7 +58,6 @@ export default {
     margin-bottom: 45px;
     border-radius: 5px;
     height: calc(100% - 45px);
-
     &:before {
       content: '';
       position: absolute;
@@ -73,6 +72,7 @@ export default {
     }
 
     &:hover {
+      transform: scale(1.1);
       &:before {
         opacity: 1;
       }
