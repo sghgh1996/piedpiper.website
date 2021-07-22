@@ -27,8 +27,6 @@ export default {
         } else {
           this.teams = response.data
         }
-        console.log('--------------------------------------------')
-        console.log(response.data)
       })
       .catch((err) => {
         console.log(err)

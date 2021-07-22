@@ -13,7 +13,7 @@
         class="col-lg-3 col-md-6 col-sm-6 col-12">
         <image-feature-item
           :title="item.title"
-          :link="item._id"
+          :link="`/products/${item._id}`"
           :description="item.overview"
           :show-arrow="false"
           :img-src="item.photo"

@@ -19,28 +19,30 @@ export default {
   },
   data () {
     return {
-      product: {},
+      product: { title: '' },
+      breadcrumbs: [],
       productLoading: true
     }
   },
-  computed: {
-    breadcrumbs () {
-      return [
-        {
-          name: 'Products',
-          link: 'products'
-        },
-        {
-          name: this.product.title ? this.product.title : '',
-          link: ''
-        }
-      ]
-    }
-  },
-  async mounted () {
-    this.product = await this.$axios.$get(`/product/${this.$route.params.id}`)
-    console.log(this.product)
-    this.productLoading = false
+  mounted () {
+    this.$axios.$get(`/product/${this.$route.params.id}`)
+      .then((response) => {
+        this.product = response
+        this.productLoading = false
+        this.breadcrumbs = [
+          {
+            name: 'Products',
+            link: '/products'
+          },
+          {
+            name: this.product.title,
+            link: `/products/${this.product._id}`
+          }
+        ]
+      })
+      .catch((err) => {
+        console.log(err)
+      })
   }
 }
 </script>

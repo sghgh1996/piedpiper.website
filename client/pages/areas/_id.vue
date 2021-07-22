@@ -36,21 +36,20 @@ export default {
   },
   data () {
     return {
-      area: {},
+      area: {
+        title: '',
+        photo: '',
+        description: '',
+        solutions: [],
+        products: []
+      },
       breadcrumbs: []
     }
   },
   mounted () {
-    const params = this.$route.path.split('/')
-    if (params.length < 3) {
-      console.log('Not Valid URL')
-      return
-    }
-    this.$axios.get(`/area/${params[2]}`)
+    this.$axios.get(`/area/${this.$route.params.id}`)
       .then((response) => {
         this.area = response.data
-        console.log('=================================')
-        console.log(this.area)
         this.breadcrumbs = [
           {
             name: 'Areas',
