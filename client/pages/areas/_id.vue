@@ -8,6 +8,11 @@
     <overview-section
       :text="area.description"
     />
+    <content-board
+      class="odd-background"
+      title="Solution"
+      :items="area.solutions"
+      />
     <image-list-board
       title="Suggested Products"
       :items="area.products"
@@ -20,12 +25,14 @@
 import PageBanner from '../../components/common/page-banner.vue'
 import OverviewSection from '../../components/pages/area/overview-section'
 import ImageListBoard from '../../components/common/image-list-board'
+import ContentBoard from '../../components/common/content-board'
 
 export default {
   components: {
     PageBanner,
     OverviewSection,
-    ImageListBoard
+    ImageListBoard,
+    ContentBoard
   },
   data () {
     return {
@@ -68,5 +75,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+  .odd-background{
+    background: #E2FBFF;
+  }
 </style>
