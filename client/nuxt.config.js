@@ -11,7 +11,7 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: './piedpiper-logo.png' }
+      { rel: 'icon', type: 'image/x-icon', href: 'piedpiper-logo.png' }
     ]
   },
 

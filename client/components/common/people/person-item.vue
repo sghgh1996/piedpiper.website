@@ -2,7 +2,7 @@
   <div class="team-item">
     <nuxt-link :to="link">
       <div class="team-content">
-        <p class="mb-4">{{ description }}</p>
+        <p class="mb-4 max-text">{{ description }}</p>
         <!-- <ul class="social">
           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -10,7 +10,7 @@
           <li><a href="#"><i class="fa fa-github"></i></a></li>
         </ul> -->
         <div class="user-image">
-          <img src="~/assets/images/team-member-sample.jpg" alt="">
+          <img :src="photo" :alt="name">
         </div>
         <div class="team-info">
           <h3 class="user-name">{{ name }}</h3>
@@ -37,6 +37,10 @@ export default {
       required: true
     },
     description: {
+      type: String,
+      required: true
+    },
+    photo: {
       type: String,
       required: true
     }
@@ -84,6 +88,15 @@ export default {
     .team-content {
       text-align: center;
       overflow: hidden;
+
+      .max-text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4; /* number of lines to show */
+        -webkit-box-orient: vertical;
+        padding-bottom: 0;
+      }
 
       .team-info {
         margin-bottom: 30px;
