@@ -39,7 +39,7 @@ export default {
       breadcrumbs: [
         {
           name: 'Products',
-          link: 'products'
+          link: '/products'
         }
       ]
     }
