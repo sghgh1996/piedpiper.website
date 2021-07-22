@@ -5,18 +5,20 @@
         <div class="col-lg-12">
           <div class="row main-content">
             <h2> {{ title }} </h2>
-            <template
-              v-for="(item , index) in items">
-              <div class="col-lg-3 col-md-6 col-sm-6 col-12" :key="index">
-                <image-feature-item
-                  :title="item.title"
-                  :link="`${path_head}/${item._id}`"
-                  :description="item.overview"
-                  :show-arrow="false"
-                  :img-src="item.photo"
-                  :small="true"/>
-              </div>
-            </template>
+            <div class="content-board col-lg-12">
+              <template
+                v-for="(item , index) in items">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12" :key="index">
+                  <image-feature-item
+                    :title="item.title"
+                    :link="`${path_head}/${item._id}`"
+                    :description="item.overview"
+                    :show-arrow="false"
+                    :img-src="item.photo"
+                    :small="false"/>
+                </div>
+              </template>
+            </div>
           </div>
         </div>
       </div>
@@ -55,6 +57,12 @@ export default {
   align-items: center;
   color: #000000;
 
+  .content-board {
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+  }
   h2 {
     margin-bottom: 40px;
   }
