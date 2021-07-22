@@ -12,8 +12,9 @@
             <person-item
               :name="person.name"
               :link="`/people/${person._id}`"
-              :description="person.role.title"
-              :role="person.description"
+              :description="person.description"
+              :role="person.role.title"
+              :photo="person.photo"
             />
           </div>
         </template>
@@ -31,6 +32,7 @@ export default {
   data () {
     return {
       people: [],
+      title: 'All People',
       breadcrumbsItems: [
         {
           name: 'People',
