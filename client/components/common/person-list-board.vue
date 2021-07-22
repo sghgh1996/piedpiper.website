@@ -5,18 +5,22 @@
         <div class="col-lg-12">
           <div class="row main-content">
             <h2> {{ title }} </h2>
-            <div class="content-board col-lg-12">
-              <template v-for="(team, index) in teams">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12" :key="index">
-                  <person-item
-                    :name="team.name"
-                    :link="`${path_head}/${team._id}`"
-                    :description="team.description"
-                    :role="team.role.title"
-                    :photo="team.photo"
-                  />
+            <div class="content-board ">
+              <div class="col-lg-12">
+                <div class="row">
+                  <template v-for="(team, index) in teams">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12" :key="index">
+                      <person-item
+                        :name="team.name"
+                        :link="`${path_head}/${team._id}`"
+                        :description="team.description"
+                        :role="team.role.title"
+                        :photo="team.photo"
+                      />
+                    </div>
+                  </template>
                 </div>
-              </template>
+              </div>
             </div>
           </div>
         </div>
@@ -58,10 +62,11 @@ export default {
 
   .content-board {
     display: flex;
-    flex-direction:row;
-    justify-content:center;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
   }
+
   h2 {
     margin-bottom: 40px;
   }
