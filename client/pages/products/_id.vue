@@ -20,17 +20,19 @@
       <section class="section">
         <div class="container">
           <div class="row colored">
-            <div class="area col-lg-12">
-              <h3> Area </h3>
-              <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                <feature-item
-                  :title="product.area.title"
-                  :link="`/areas/${product.area._id}`"
-                  :description="product.area.overview"
-                  :showArrow="false"
-                  :small="false"/>
+              <div class="col-lg-12">
+                <div class="row">
+                  <h3> Area </h3>
+                  <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <feature-item
+                      :title="product.area.title"
+                      :link="`/areas/${product.area._id}`"
+                      :description="product.area.overview"
+                      :showArrow="false"
+                      :small="false"/>
+                  </div>
+                </div>
               </div>
-            </div>
           </div>
         </div>
       </section>
@@ -87,12 +89,5 @@ export default {
 <style lang="scss" scoped>
 .odd-background {
   background: #E2FBFF;
-}
-
-.area {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
 }
 </style>

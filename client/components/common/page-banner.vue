@@ -1,7 +1,7 @@
 <template>
   <div class="page-banner">
     <img :src="imgSrc" alt="This is title" />
-    <div class="cover"/>
+    <div class="coveri"/>
     <div class="card-title">
       <div>
         <h1>{{ title }}</h1>
@@ -49,7 +49,7 @@ export default {
     object-fit: cover;
   }
 
-  .cover {
+  .coveri {
     background: #23B8CF;
     width: 100%;
     height: 270px;

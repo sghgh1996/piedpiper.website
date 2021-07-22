@@ -41,7 +41,8 @@ export default {}
 
 .header-area {
 	height: 100px;
-  padding: 25px;
+  display: flex;
+  align-items: center;
 	// position: fixed;
   // top: 0;
   // left: 0;

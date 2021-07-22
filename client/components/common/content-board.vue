@@ -60,6 +60,7 @@ export default {
 
   h2 {
     margin-bottom: 40px;
+    text-align: center;
   }
 
   p {
@@ -73,6 +74,7 @@ export default {
     margin-top: 5em;
     h3 {
       margin-bottom: 2em;
+      text-align: center;
     }
     img {
       max-width: 100%;

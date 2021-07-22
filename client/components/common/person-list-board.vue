@@ -69,6 +69,7 @@ export default {
 
   h2 {
     margin-bottom: 40px;
+    text-align: center;
   }
 
   p {
