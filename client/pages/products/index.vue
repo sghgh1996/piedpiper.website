@@ -6,20 +6,24 @@
       :breadcrumbs="breadcrumbs"
     />
 
-    <div class="content col-8">
-      <div class="row">
-        <div
-          v-for="(item , index) in items"
-          :key="index"
-          class="col-lg-3 col-md-6 col-sm-6 col-12">
-          <image-feature-item
-            :title="item.title"
-            :link="`/products/${item._id}`"
-            :description="item.overview"
-            :show-arrow="false"
-            :img-src="item.photo"
-            :small="false">
-          </image-feature-item>
+    <div class="container">
+      <div class="section">
+        <div class="col-lg-12">
+          <div class="row content">
+            <div
+              v-for="(item , index) in items"
+              :key="index"
+              class="col-lg-3 col-md-6 col-sm-6 col-12">
+              <image-feature-item
+                :title="item.title"
+                :link="`/products/${item._id}`"
+                :description="item.overview"
+                :show-arrow="false"
+                :img-src="item.photo"
+                :small="false">
+              </image-feature-item>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -54,9 +58,6 @@ export default {
 
 <style lang="scss" scoped>
 .content {
-  display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  margin: 45px auto 0 auto;
 }
 </style>

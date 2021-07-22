@@ -3,24 +3,29 @@
     <page-banner
       :title="title"
       :img-src="$image('hero.jpg')"
-      :breadcrumbs="breadcrumbs" />
+      :breadcrumbs="breadcrumbs"/>
 
-    <div class="content col-8">
-      <div
-        class="col-lg-3 col-md-6 col-sm-6 col-12"
-        v-for="(item , index) in items"
-        :key="index">
-        <feature-item
-          :title="item.title"
-          :link="`areas/${item._id}`"
-          :description="item.overview"
-          :showArrow="false"
-          :logo="item.logo"
-          :small="false">
-        </feature-item>
+    <div class="container">
+      <div class="section">
+        <div class="col-lg-12">
+          <div class="row content">
+            <div
+              class="col-lg-3 col-md-6 col-sm-6 col-12"
+              v-for="(item , index) in items"
+              :key="index">
+              <feature-item
+                :title="item.title"
+                :link="`areas/${item._id}`"
+                :description="item.overview"
+                :showArrow="false"
+                :logo="item.logo"
+                :small="false">
+              </feature-item>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
   </div>
 </template>
 <script>
