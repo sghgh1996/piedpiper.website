@@ -14,7 +14,7 @@
         <image-feature-item
           :title="item.title"
           :link="item._id"
-          :description="item.information"
+          :description="item.overview"
           :show-arrow="false"
           :img-src="item.photo"
           :small="false">
