@@ -3,7 +3,7 @@
     <template v-if="!productLoading">
       <page-banner
         :title="product.title"
-        :imgSrc="$image('hero.jpg')"
+        :imgSrc="product.photo"
         :breadcrumbs="breadcrumbs"
       />
     </template>
