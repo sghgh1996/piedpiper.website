@@ -12,7 +12,7 @@
         :key="index">
         <image-feature-item
           :title="item.title"
-          :link="`careers/${item._id}`"
+          :link="`people?role=${item._id}`"
           :imgSrc="item.photo"
           :small="true">
         </image-feature-item>
