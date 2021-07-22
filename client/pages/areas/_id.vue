@@ -1,22 +1,52 @@
 <template>
   <section class="page">
     <page-banner
-      title="Pied Piper"
-      :img-src="$image('hero.jpg')"
-      :breadcrumbs="[]"
+      :title="area.title"
+      :img-src="area.photo"
+      :breadcrumbs="breadcrumbs"
     />
-
-
+    <overview-section
+      :text="area.description"
+    />
   </section>
 </template>
 
 <script>
-export default {
-  data () {
+import PageBanner from '../../components/common/page-banner.vue'
+import OverviewSection from '../../components/pages/area/overview-section'
 
+export default {
+  components: { PageBanner, OverviewSection },
+  data () {
+    return {
+      area: {},
+      breadcrumbs: []
+    }
   },
   mounted () {
-
+    const params = this.$route.path.split('/')
+    if (params.length < 3) {
+      console.log('Not Valid URL')
+      return
+    }
+    this.$axios.get(`/area/${params[2]}`)
+      .then((response) => {
+        this.area = response.data
+        console.log(this.area)
+        this.breadcrumbs = [
+          {
+            name: 'Areas',
+            link: '/areas'
+          },
+          {
+            name: this.area.title,
+            link: `/areas/${this.area._id}`
+          }
+        ]
+      })
+      .catch((err) => {
+        console.log(err)
+      })
   },
   methods: {
     getTheArea () {
