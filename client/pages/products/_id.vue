@@ -21,7 +21,7 @@
         <div class="container">
           <div class="row colored">
               <div class="col-lg-12">
-                <div class="row">
+                <div class="row center-by-even">
                   <h3> Area </h3>
                   <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                     <feature-item
@@ -89,5 +89,9 @@ export default {
 <style lang="scss" scoped>
 .odd-background {
   background: #E2FBFF;
+}
+.center-by-even {
+  justify-content: space-evenly;
+  align-items: center;
 }
 </style>

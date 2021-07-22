@@ -64,6 +64,9 @@ export default {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    .row {
+      justify-content: center;
+    }
   }
 
   h2 {
