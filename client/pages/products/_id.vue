@@ -12,7 +12,7 @@
       />
       <person-list-board
         class="odd-background"
-        title="People Work on this Project"
+        title="People Working on this Project"
         :teams="product.people"
         path_head="/people"
       />

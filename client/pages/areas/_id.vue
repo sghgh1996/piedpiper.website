@@ -20,7 +20,7 @@
     />
     <person-list-board
       class="odd-background"
-      title="aaaaaaaaaaaaa"
+      title="People Working in this Area"
       :teams="area.people"
       path_head="/people"
     />
@@ -60,7 +60,6 @@ export default {
     this.$axios.get(`/area/${this.$route.params.id}`)
       .then((response) => {
         this.area = response.data
-        console.log(this.area.people)
         this.breadcrumbs = [
           {
             name: 'Areas',
