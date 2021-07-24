@@ -7,20 +7,20 @@
 
     <div class="container">
       <div class="section">
-        <div class="col-lg-12">
-          <div class="row">
-            <template v-for="person in people">
-              <div class="col-lg-3 col-md-6 col-sm-6 col-12" :key="person._id">
-                <person-item
-                  :name="person.name"
-                  :link="`/people/${person._id}`"
-                  :description="person.description"
-                  :role="person.role.title"
-                  :photo="person.photo"
-                />
-              </div>
-            </template>
-          </div>
+        <div class="row">
+        </div>
+        <div class="row">
+          <template v-for="person in people">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12" :key="person._id">
+              <person-item
+                :name="person.name"
+                :link="`/people/${person._id}`"
+                :description="person.description"
+                :role="person.role.title"
+                :photo="person.photo"
+              />
+            </div>
+          </template>
         </div>
       </div>
     </div>
@@ -39,6 +39,7 @@ export default {
   data () {
     return {
       people: [],
+      careers: [],
       title: 'All People',
       breadcrumbsItems: [
         {
@@ -48,14 +49,9 @@ export default {
       ]
     }
   },
-  mounted () {
-    this.$axios.get('/people/list')
-      .then((response) => {
-        this.people = response.data
-      })
-      .catch((err) => {
-        console.log(err)
-      })
+  async mounted () {
+    this.careers = await this.$axios.$get('/career/list')
+    this.people = await this.$axios.$get('/people/list')
   }
 }
 </script>
