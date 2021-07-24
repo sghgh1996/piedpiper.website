@@ -10,7 +10,7 @@
             <div class="row person-content">
               <div class="col-lg-5 col-10">
                 <h1>{{ person.name }}</h1>
-                <h5>{{ person.role.title }}</h5>
+                <h5>{{ person.role.title }} - {{ person.area.title }}</h5>
                 <br/><br/>
                 <p>{{ person.description }}</p>
                 <br/><br/>
