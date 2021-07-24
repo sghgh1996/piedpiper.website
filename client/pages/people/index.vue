@@ -7,7 +7,7 @@
     <div class="container">
       <div class="section">
         <div class="row mb-5">
-          <select class="career-select">
+          <select class="career-select" @input="changeCareer">
             <option
                 value="all"
                 :selected="!roleID"
@@ -67,12 +67,27 @@ export default {
     }
   },
   async mounted () {
-    this.roleID = this.$route.query.role
+    this.roleID = this.$route.query.role ? this.$route.query.role : ''
     this.careers = await this.$axios.$get('/career/list')
-    if (this.roleID) {
-      this.people = await this.$axios.$get(`/people/career/${this.roleID}`)
-    } else {
-      this.people = await this.$axios.$get('/people/list')
+    this.fetchPeople()
+  },
+  methods: {
+    changeCareer (e) {
+      if (e.target.value === 'all') {
+        this.$router.push('people')
+        this.roleID = ''
+      } else {
+        this.$router.push(`people?role=${e.target.value}`)
+        this.roleID = e.target.value
+      }
+      this.fetchPeople()
+    },
+    async fetchPeople () {
+      if (this.roleID) {
+        this.people = await this.$axios.$get(`/people/career/${this.roleID}`)
+      } else {
+        this.people = await this.$axios.$get('/people/list')
+      }
     }
   }
 }
