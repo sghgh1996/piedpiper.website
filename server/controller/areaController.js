@@ -55,7 +55,7 @@ exports.findById = async function (req, res) {
     return;
   }
   try {
-    let result = await Area.findById(req.params.id).populate('products').select('-__v');
+    let result = await Area.findById(req.params.id).populate('products').populate('people').select('-__v');
     if(result) {
       res.json(result);
     }else{
