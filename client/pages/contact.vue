@@ -56,38 +56,6 @@
 							</div>
 						</div>
 					</div>
-//					<div class="col-lg-12">
-//						<div class="contact-bottom">
-//							<div class="row">
-//								<div class="col-lg-4 col-md-6 col-sm-12">
-//									<h5 class="margin-bottom-30">Get in touch</h5>
-//									<div class="contact-text">
-//                    <p>
-//                      Thank you for your interest in PiedPiper! Please fill out the form to contact us and don't forget to check the box if you'd like to receive news, articles and insights.
-//                    </p>
-//									</div>
-//								</div>
-//								<div class="col-lg-8 col-md-6 col-sm-12">
-//									<div class="contact-form">
-//										<div class="row">
-//											<div class="col-lg-6 col-md-12 col-sm-12">
-//												<input type="text" placeholder="Name, surname">
-//											</div>
-//											<div class="col-lg-6 col-md-12 col-sm-12">
-//												<input type="text" placeholder="E-Mail">
-//											</div>
-//											<div class="col-lg-12">
-<!--												<textarea placeholder="Your message"></textarea>-->
-<!--											</div>-->
-<!--											<div class="col-lg-12">-->
-<!--												<button class="btn-primary-line pull-right">SEND</button>-->
-<!--											</div>-->
-<!--										</div>-->
-<!--									</div>-->
-<!--								</div>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</div>-->
 				</div>
 			</div>
     </div>
