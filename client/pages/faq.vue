@@ -18,14 +18,14 @@
                 <div class="card-header">
                   <div class="mb-0">
                     <h5 class="faq-title">
-                      <span class="badge">1</span> How does Alya Internet work?
+                      <span class="badge">1</span> Who's behind the project?
                     </h5>
                   </div>
                 </div>
                 <div class="collapse show">
                   <div class="card-body">
-                    <p>Donec tempus sodales dolor, at efficitur enim posuere auctor. Nam et nisi eu purus tempor faucibus aliquet vitae orci. Curabitur sollicitudin leo et magna pharetra efficitur. Nullam et scelerisque lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque faucibus sit amet odio eget scelerisque. Mauris dictum cursus ornare.</p>
-                    <p>Ut vehicula blandit tellus. Sed sit amet bibendum leo, non sagittis neque. Nam fringilla fermentum tortor, ac gravida velit facilisis id. Donec congue ullamcorper velit, at malesuada arcu faucibus pretium. Donec rhoncus magna sit amet massa venenatis, ut convallis justo ultricies.</p>
+                    <p>Angelo, Sadjad and Saman. We're three engineering students in Politecnico di Milano.</p>
+                    <p>Our goal is to perform a good job with this project and have some fun doing that.</p>
                   </div>
                 </div>
               </div>
@@ -33,14 +33,14 @@
                 <div class="card-header">
                   <div class="mb-0">
                     <h5 class="faq-title">
-                      <span class="badge">2</span> How fast is the Alya Internet service?
+                      <span class="badge">2</span> How can i contact you?
                     </h5>
                   </div>
                 </div>
                 <div class="collapse show">
                   <div class="card-body">
-                    <p>Donec tempus sodales dolor, at efficitur enim posuere auctor. Nam et nisi eu purus tempor faucibus aliquet vitae orci. Curabitur sollicitudin leo et magna pharetra efficitur. Nullam et scelerisque lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque faucibus sit amet odio eget scelerisque. Mauris dictum cursus ornare.</p>
-                    <p>Ut vehicula blandit tellus. Sed sit amet bibendum leo, non sagittis neque. Nam fringilla fermentum tortor, ac gravida velit facilisis id. Donec congue ullamcorper velit, at malesuada arcu faucibus pretium. Donec rhoncus magna sit amet massa venenatis, ut convallis justo ultricies.</p>
+                    <p>Via mail or phone call.</p>
+                    <p>All the contacts are in the Contact us page, or at the bottom of each one.</p>
                   </div>
                 </div>
               </div>
@@ -48,14 +48,14 @@
                 <div class="card-header">
                   <div class="mb-0">
                     <h5 class="faq-title">
-                      <span class="badge">3</span> Can I keep my home phone number?
+                      <span class="badge">3</span> How can I work for you?
                     </h5>
                   </div>
                 </div>
                 <div class="collapse show">
                   <div class="card-body">
-                    <p>Donec tempus sodales dolor, at efficitur enim posuere auctor. Nam et nisi eu purus tempor faucibus aliquet vitae orci. Curabitur sollicitudin leo et magna pharetra efficitur. Nullam et scelerisque lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque faucibus sit amet odio eget scelerisque. Mauris dictum cursus ornare.</p>
-                    <p>Ut vehicula blandit tellus. Sed sit amet bibendum leo, non sagittis neque. Nam fringilla fermentum tortor, ac gravida velit facilisis id. Donec congue ullamcorper velit, at malesuada arcu faucibus pretium. Donec rhoncus magna sit amet massa venenatis, ut convallis justo ultricies.</p>
+                    <p>PiedPiper is a very strict society. to work here there are some conditions you need to repect.</p>
+                    <p>The options to work for us include: name a theorem, discover some massive phisical propriety that will change society or be casted for an american sitcom with at least 9 seasons.</p>
                   </div>
                 </div>
               </div>
@@ -63,14 +63,14 @@
                 <div class="card-header">
                   <div class="mb-0">
                     <h5 class="faq-title">
-                      <span class="badge">4</span> How does the NBN affect my Alya Internet Service?
+                      <span class="badge">4</span> How did you grow so much in such a short time?
                     </h5>
                   </div>
                 </div>
                 <div class="collapse show">
                   <div class="card-body">
-                    <p>Donec tempus sodales dolor, at efficitur enim posuere auctor. Nam et nisi eu purus tempor faucibus aliquet vitae orci. Curabitur sollicitudin leo et magna pharetra efficitur. Nullam et scelerisque lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque faucibus sit amet odio eget scelerisque. Mauris dictum cursus ornare.</p>
-                    <p>Ut vehicula blandit tellus. Sed sit amet bibendum leo, non sagittis neque. Nam fringilla fermentum tortor, ac gravida velit facilisis id. Donec congue ullamcorper velit, at malesuada arcu faucibus pretium. Donec rhoncus magna sit amet massa venenatis, ut convallis justo ultricies.</p>
+                    <p>One of the founders isItalian, and he really thaught the rest of the crew how things are done!</p>
+                    <p>Favors for favors, promisses which will never be possibly respected and a little bit of bribing here and there are the perfect recepie for success!</p>
                   </div>
                 </div>
               </div>
