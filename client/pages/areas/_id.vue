@@ -12,11 +12,17 @@
       class="odd-background"
       title="Solution"
       :items="area.solutions"
-      />
+    />
     <image-list-board
       title="Suggested Products"
       :items="area.products"
       path_head="/products"
+    />
+    <person-list-board
+      class="odd-background"
+      title="People Working in this Area"
+      :teams="area.people"
+      path_head="/people"
     />
   </section>
 </template>
@@ -26,13 +32,15 @@ import PageBanner from '../../components/common/page-banner.vue'
 import OverviewSection from '../../components/pages/area/overview-section'
 import ImageListBoard from '../../components/common/image-list-board'
 import ContentBoard from '../../components/common/content-board'
+import PersonListBoard from '../../components/common/person-list-board'
 
 export default {
   components: {
     PageBanner,
     OverviewSection,
     ImageListBoard,
-    ContentBoard
+    ContentBoard,
+    PersonListBoard
   },
   data () {
     return {
@@ -41,7 +49,9 @@ export default {
         photo: '',
         description: '',
         solutions: [],
-        products: []
+        products: [],
+        people: []
+
       },
       breadcrumbs: []
     }
