@@ -18,13 +18,14 @@
                 <div class="card-header">
                   <div class="mb-0">
                     <h5 class="faq-title">
-                      <span class="badge">1</span> What is Autonomous Performance Optimization and AI-powered Performance Optimization?
+                      <span class="badge">1</span> Who's behind the project?
                     </h5>
                   </div>
                 </div>
                 <div class="collapse show">
                   <div class="card-body">
-                    <p>Autonomous Performance Optimization is a new approach to IT performance optimization that leverages AI and Machine Learning techniques to automatically and continuously identify how to configure the technology stack to maximize application performance, cost savings and service resilience.</p>
+                    <p>Angelo, Sadjad and Saman. We're three engineering students in Politecnico di Milano.</p>
+                    <p>Our goal is to perform a good job with this project and have some fun doing that.</p>
                   </div>
                 </div>
               </div>
@@ -32,13 +33,14 @@
                 <div class="card-header">
                   <div class="mb-0">
                     <h5 class="faq-title">
-                      <span class="badge">2</span> Why do I need Autonomous Performance Optimization?
+                      <span class="badge">2</span> How can i contact you?
                     </h5>
                   </div>
                 </div>
                 <div class="collapse show">
                   <div class="card-body">
-                    <p>The complexity of today’s on-premise and cloud infrastructures has grown beyond the reach of even the most skilled performance experts. Software gets built faster and faster, technology platforms are complex with hundreds of possible configurations, cloud vendors offer a growing array of configuration and tuning options. Traditional manual approach to performance tuning is ineffective at this scale, which means organizations are leaving significant performance and cost savings on the table.</p>
+                    <p>Via mail or phone call.</p>
+                    <p>All the contacts are in the Contact us page, or at the bottom of each one.</p>
                   </div>
                 </div>
               </div>
@@ -46,13 +48,14 @@
                 <div class="card-header">
                   <div class="mb-0">
                     <h5 class="faq-title">
-                      <span class="badge">3</span> How does PiedPiper support Autonomous Performance Optimization?
+                      <span class="badge">3</span> How can I work for you?
                     </h5>
                   </div>
                 </div>
                 <div class="collapse show">
                   <div class="card-body">
-                    <p>PiedPiper patented AI has been specifically designed to solve otherwise intractable real-world optimization problems that require exploring millions of system configurations. The PiedPiper reinforcement learning engine intelligently explores the configuration space and converges to the optimal configuration within hours.</p>
+                    <p>PiedPiper is a very strict society. to work here there are some conditions you need to repect.</p>
+                    <p>The options to work for us include: name a theorem, discover some massive phisical propriety that will change society or be casted for an american sitcom with at least 9 seasons.</p>
                   </div>
                 </div>
               </div>
@@ -60,13 +63,14 @@
                 <div class="card-header">
                   <div class="mb-0">
                     <h5 class="faq-title">
-                      <span class="badge">4</span> How long does it take for PiedPiper to produce results?
+                      <span class="badge">4</span> How did you grow so much in such a short time?
                     </h5>
                   </div>
                 </div>
                 <div class="collapse show">
                   <div class="card-body">
-                    <p>PiedPiper patented AI has been designed to support real-world optimization by converging on optimal configurations faster (and more precisely) than with any alternative approach or AI technique. The actual optimization time generally correlates with the complexity of the optimization scenario, mostly represented by the number of parameters. PiedPiper can converge on optimal configurations in just a few hours, typically in 8 to 24 hours for medium-complexity scenarios.</p>
+                    <p>One of the founders isItalian, and he really thaught the rest of the crew how things are done!</p>
+                    <p>Favors for favors, promisses which will never be possibly respected and a little bit of bribing here and there are the perfect recepie for success!</p>
                   </div>
                 </div>
               </div>
