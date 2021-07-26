@@ -18,14 +18,13 @@
                 <div class="card-header">
                   <div class="mb-0">
                     <h5 class="faq-title">
-                      <span class="badge">1</span> How does Alya Internet work?
+                      <span class="badge">1</span> What is Autonomous Performance Optimization and AI-powered Performance Optimization?
                     </h5>
                   </div>
                 </div>
                 <div class="collapse show">
                   <div class="card-body">
-                    <p>Donec tempus sodales dolor, at efficitur enim posuere auctor. Nam et nisi eu purus tempor faucibus aliquet vitae orci. Curabitur sollicitudin leo et magna pharetra efficitur. Nullam et scelerisque lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque faucibus sit amet odio eget scelerisque. Mauris dictum cursus ornare.</p>
-                    <p>Ut vehicula blandit tellus. Sed sit amet bibendum leo, non sagittis neque. Nam fringilla fermentum tortor, ac gravida velit facilisis id. Donec congue ullamcorper velit, at malesuada arcu faucibus pretium. Donec rhoncus magna sit amet massa venenatis, ut convallis justo ultricies.</p>
+                    <p>Autonomous Performance Optimization is a new approach to IT performance optimization that leverages AI and Machine Learning techniques to automatically and continuously identify how to configure the technology stack to maximize application performance, cost savings and service resilience.</p>
                   </div>
                 </div>
               </div>
@@ -33,14 +32,13 @@
                 <div class="card-header">
                   <div class="mb-0">
                     <h5 class="faq-title">
-                      <span class="badge">2</span> How fast is the Alya Internet service?
+                      <span class="badge">2</span> Why do I need Autonomous Performance Optimization?
                     </h5>
                   </div>
                 </div>
                 <div class="collapse show">
                   <div class="card-body">
-                    <p>Donec tempus sodales dolor, at efficitur enim posuere auctor. Nam et nisi eu purus tempor faucibus aliquet vitae orci. Curabitur sollicitudin leo et magna pharetra efficitur. Nullam et scelerisque lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque faucibus sit amet odio eget scelerisque. Mauris dictum cursus ornare.</p>
-                    <p>Ut vehicula blandit tellus. Sed sit amet bibendum leo, non sagittis neque. Nam fringilla fermentum tortor, ac gravida velit facilisis id. Donec congue ullamcorper velit, at malesuada arcu faucibus pretium. Donec rhoncus magna sit amet massa venenatis, ut convallis justo ultricies.</p>
+                    <p>The complexity of today’s on-premise and cloud infrastructures has grown beyond the reach of even the most skilled performance experts. Software gets built faster and faster, technology platforms are complex with hundreds of possible configurations, cloud vendors offer a growing array of configuration and tuning options. Traditional manual approach to performance tuning is ineffective at this scale, which means organizations are leaving significant performance and cost savings on the table.</p>
                   </div>
                 </div>
               </div>
@@ -48,14 +46,13 @@
                 <div class="card-header">
                   <div class="mb-0">
                     <h5 class="faq-title">
-                      <span class="badge">3</span> Can I keep my home phone number?
+                      <span class="badge">3</span> How does PiedPiper support Autonomous Performance Optimization?
                     </h5>
                   </div>
                 </div>
                 <div class="collapse show">
                   <div class="card-body">
-                    <p>Donec tempus sodales dolor, at efficitur enim posuere auctor. Nam et nisi eu purus tempor faucibus aliquet vitae orci. Curabitur sollicitudin leo et magna pharetra efficitur. Nullam et scelerisque lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque faucibus sit amet odio eget scelerisque. Mauris dictum cursus ornare.</p>
-                    <p>Ut vehicula blandit tellus. Sed sit amet bibendum leo, non sagittis neque. Nam fringilla fermentum tortor, ac gravida velit facilisis id. Donec congue ullamcorper velit, at malesuada arcu faucibus pretium. Donec rhoncus magna sit amet massa venenatis, ut convallis justo ultricies.</p>
+                    <p>PiedPiper patented AI has been specifically designed to solve otherwise intractable real-world optimization problems that require exploring millions of system configurations. The PiedPiper reinforcement learning engine intelligently explores the configuration space and converges to the optimal configuration within hours.</p>
                   </div>
                 </div>
               </div>
@@ -63,14 +60,13 @@
                 <div class="card-header">
                   <div class="mb-0">
                     <h5 class="faq-title">
-                      <span class="badge">4</span> How does the NBN affect my Alya Internet Service?
+                      <span class="badge">4</span> How long does it take for PiedPiper to produce results?
                     </h5>
                   </div>
                 </div>
                 <div class="collapse show">
                   <div class="card-body">
-                    <p>Donec tempus sodales dolor, at efficitur enim posuere auctor. Nam et nisi eu purus tempor faucibus aliquet vitae orci. Curabitur sollicitudin leo et magna pharetra efficitur. Nullam et scelerisque lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque faucibus sit amet odio eget scelerisque. Mauris dictum cursus ornare.</p>
-                    <p>Ut vehicula blandit tellus. Sed sit amet bibendum leo, non sagittis neque. Nam fringilla fermentum tortor, ac gravida velit facilisis id. Donec congue ullamcorper velit, at malesuada arcu faucibus pretium. Donec rhoncus magna sit amet massa venenatis, ut convallis justo ultricies.</p>
+                    <p>PiedPiper patented AI has been designed to support real-world optimization by converging on optimal configurations faster (and more precisely) than with any alternative approach or AI technique. The actual optimization time generally correlates with the complexity of the optimization scenario, mostly represented by the number of parameters. PiedPiper can converge on optimal configurations in just a few hours, typically in 8 to 24 hours for medium-complexity scenarios.</p>
                   </div>
                 </div>
               </div>
